@@ -19,7 +19,7 @@ In order to automatically provision users in Rollbar, we recommend you only assi
 **In Rollbar:**
 
 * Make sure that you have successfully [configured Okta as your identity provider](../saml/#okta).
-* Turn on the `Enable user and team provisioining` option.
+* Turn on the **Enable user and team provisioning** option.
 * Copy the provided access token.
 
 **In Okta:**
@@ -28,7 +28,7 @@ In order to automatically provision users in Rollbar, we recommend you only assi
 * TODO:  Figure out where to stick access token for 
 * _For each Okta group that you'd like to assign to the Rollbar app:_
   * Go to the **Assignments** tab in the Rolbar application, click **Assign to Groups** and then select the group(s). 
-  * Go to the **Push Groups** tab in the Rollbar application, click **Add Group by Name**, enter the name of the group, choose **Push group memberships immediately**, and choose to **Create Group**.
+  * Go to the **Push Groups** tab in the Rollbar application, click **Add Group by Name**, enter the name of the group, turn on **Push group memberships immediately**, and choose to **Create Group** if no match is found.
 
 You must add groups in _both_ the **Assignments** and **Push Groups** tabs in order for teams and users to be correctly provisioned. 
 {: .warning}
