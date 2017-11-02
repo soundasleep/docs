@@ -16,13 +16,13 @@ Currently, provisioning is only available for Okta.  If you would like to use pr
 In order to automatically provision users in Rollbar, we recommend you only assign groups to the Rollbar application.  Users who are assigned directly (i.e. not as part of a group) to the Rollbar application will be created but will not be automatically assigned to any teams in your account, and thus will not be able to access any Rollbar projects.
 {: .warning}
 
-_**In Rollbar:**_
+**In Rollbar:**
 
 * Make sure that you have successfully [configured Okta as your identity provider](../saml/#okta).
 * Turn on the `Enable user and team provisioining` option.
 * Copy the provided access token.
 
-_**In Okta:**_
+**In Okta:**
 
 * Make sure that the Rollbar application is added to your your Okta account.
 * TODO:  Figure out where to stick access token for 
@@ -33,6 +33,6 @@ _**In Okta:**_
 You must add groups in _both_ the **Assignments** and **Push Groups** tabs in order for teams and users to be correctly provisioned. 
 {: .warning}
 
-_**In Rollbar:**_
+**In Rollbar:**
 
 * Confirm that a team has been created for each identity provider group, and that all group members are also team members.
