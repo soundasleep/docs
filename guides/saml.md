@@ -1,15 +1,15 @@
 # SAML Identity Providers
 
-Users must already exist before they can authenticate via a SAML identity provider. User provisioning from SAML identity providers is not currently supported.
-{: .warning}
-
-Rollbar account owners can configure a [SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) identity provider to authenticate users.  The following SAML providers have been tested and have specific instructions below:
+Rollbar account owners can configure a [SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) identity provider (IdP) to authenticate users.  The following SAML IdPs have been tested and have specific instructions below:
 
 * [G Suite](#g-suite)
 * [Okta](#okta)
 * [Bitium](#bitium).
 
-[Other SAML-compliant identity providers](#others) may be used, however we don't provide specific instructions for configuring them.
+[Other SAML-compliant IdPs](#others) may be used, however we don't provide specific instructions for configuring them.
+
+[User and team provisioning](../scim-provisioning/) is currently available for [Okta](../scim-provisioning/#okta).  If you are using a different IdP, then Rollbar users must already exist before they can be authenticated by your IdP.
+{: .info}
 
 ## G Suite
 
