@@ -6,38 +6,10 @@ When provisioning is enabled, certain actions in your IdP will automatically upd
 
 | Action in IdP: | Result in Rollbar account: |
 |----------------|----------------------------|
-| _Assign group to Rollbar app:_ |<ul><li>Rollbar team is created.</li><li>Group members are added as members of the Rollbar team.</li></ul> |
- <!--
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <em>Assign user to Rollbar app:</em>
-   </td>
-   <td>
-    <em><strong>Not recommended</strong><em>
-     <ul><li>Rollbar user is added to account, but not to any teams.</li></ul>
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <em>Remove group from rollbar app:</em>
-   </td>
-   <td>
-    <ul><li>Rollbar team is deleted.</li></ul>
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <em>Remove user from group assigned to Rollbar app:</em>
-   </td>
-   <td>
-    <ul><li>User is removed from the Rollbar team.</li></ul>
-   </td>
-  </tr>
- </tbody>
-</table>
--->
+| _Assign group to Rollbar app:_ | Rollbar team is created. Group members are added as members of the Rollbar team.|
+| _Assign user to Rollbar app:_ | **Not recommended.** Rollbar user is added to account, but not to any teams. |
+| _Remove group from rollbar app: | Rollbar team is deleted. |
+| _Remove user from group assigned to Rollbar app:_ | User is removed from the Rollbar team. |
 
 Additionally, any action on a user or group that would cause it to lose access to the Rollbar app (i.e. delete, suspend, deactivate, etc.) will result in the corresponding Rollbar teams/user being removed from the Rollbar account.
 
