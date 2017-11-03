@@ -14,40 +14,40 @@ When provisioning is enabled, certain actions in your IdP will automatically upd
  <tbody>
   <tr>
    <td>
-    <em>Assign a group to Rollbar app</em>
+    <em>Assign a group to Rollbar app:</em>
    </td>
    <td>
     <ul>
-     <li>Rollbar team is created</li>
-     <li>Group members are added as members of the Rollbar team</li>
+     <li>Rollbar team is created.</li>
+     <li>Group members are added as members of the Rollbar team.</li>
     </ul>
    </td>
   </tr>
   <tr>
    <td>
-    <em>Assign a user to Rollbar app</em>
+    <em>Assign a user to Rollbar app:</em>
    </td>
    <td>
     <em><strong>Not recommended</strong><em>
      <ul><li>Rollbar user is added to account, but not to any teams.</li></ul>
    </td>
   </tr>
-    <tr>
-     <td>
-      Remove a group from rollbar app
-     </td>
-     <td>
-      <ul><li>Rollbar team is deleted</li></ul>
-     </td>
-    </tr>
-    <tr>
-     <td>
-      Remove a user from a group assigned to Rollbar app
-     </td>
-     <td>
-      <ul><li>User is removed from the Rollbar team.</li></ul>
-     </td>
-     </tr>
+  <tr>
+   <td>
+    <em>Remove a group from rollbar app:</em>
+   </td>
+   <td>
+    <ul><li>Rollbar team is deleted.</li></ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <em>Remove a user from a group assigned to Rollbar app:</em>
+   </td>
+   <td>
+    <ul><li>User is removed from the Rollbar team.</li></ul>
+   </td>
+  </tr>
  </tbody>
 </table>
 
