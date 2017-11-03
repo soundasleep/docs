@@ -14,7 +14,7 @@ When provisioning is enabled, certain actions in your IdP will automatically upd
  <tbody>
   <tr>
    <td>
-    <em>Assign a group to Rollbar app:</em>
+    <em>Assign group to Rollbar app:</em>
    </td>
    <td>
     <ul>
@@ -25,7 +25,7 @@ When provisioning is enabled, certain actions in your IdP will automatically upd
   </tr>
   <tr>
    <td>
-    <em>Assign a user to Rollbar app:</em>
+    <em>Assign user to Rollbar app:</em>
    </td>
    <td>
     <em><strong>Not recommended</strong><em>
@@ -34,7 +34,7 @@ When provisioning is enabled, certain actions in your IdP will automatically upd
   </tr>
   <tr>
    <td>
-    <em>Remove a group from rollbar app:</em>
+    <em>Remove group from rollbar app:</em>
    </td>
    <td>
     <ul><li>Rollbar team is deleted.</li></ul>
@@ -42,7 +42,7 @@ When provisioning is enabled, certain actions in your IdP will automatically upd
   </tr>
   <tr>
    <td>
-    <em>Remove a user from a group assigned to Rollbar app:</em>
+    <em>Remove user from group assigned to Rollbar app:</em>
    </td>
    <td>
     <ul><li>User is removed from the Rollbar team.</li></ul>
