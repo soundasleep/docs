@@ -4,23 +4,10 @@ Rollbar provides a [SCIM](https://en.wikipedia.org/wiki/System_for_Cross-domain_
 
 When provisioning is enabled, certain actions in your IdP will automatically update your Rollbar account:
 
-<table>
- <thead>
-  <tr>
-   <th>Action in IdP:</th>
-   <th>Result in Rollbar account:</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>
-    <em>Assign group to Rollbar app:</em>
-   </td>
-   <td>
-    <ul>
-     <li>Rollbar team is created.</li>
-     <li>Group members are added as members of the Rollbar team.</li>
-    </ul>
+| Action in IdP: | Result in Rollbar account: |
+|----------------|----------------------------|
+| _Assign group to Rollbar app:_ |<ul><li>Rollbar team is created.</li><li>Group members are added as members of the Rollbar team.</li></ul> |
+ <!--
    </td>
   </tr>
   <tr>
@@ -50,6 +37,7 @@ When provisioning is enabled, certain actions in your IdP will automatically upd
   </tr>
  </tbody>
 </table>
+-->
 
 Additionally, any action on a user or group that would cause it to lose access to the Rollbar app (i.e. delete, suspend, deactivate, etc.) will result in the corresponding Rollbar teams/user being removed from the Rollbar account.
 
