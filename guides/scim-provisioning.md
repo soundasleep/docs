@@ -1,12 +1,57 @@
 # SCIM Provisioning
 
-Rollbar provides a [SCIM](https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management) API that allows for users and teams to be automatically created and managed from external identity providers.  Provider-specific instructions are provided below.
+Rollbar provides a [SCIM](https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management) API that allows for users and teams to be automatically created and managed from external identity providers (IdPs).  IdP-specific instructions are provided below.
 
-When provisioning is enabled, assigning a group in your identity provider to the Rollbar application will result in a team being created in your Rollbar account.  All users who are members of the group will become members of the Rollbar team.  The team can then be assigned to the appropriate Rollbar projects in your account.
+When provisioning is enabled, certain actions in your IdP will automatically update your Rollbar account:
 
-If you unassign a group from the Rollbar application in your IdP, the corresponding Rollbar team will be deleted from your account.
+<table>
+ <thead>
+  <tr>
+   <th>Action in IdP:</th>
+   <th>Result in Rollbar account:</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>
+    <em>Assign a group to Rollbar app</em>
+   </td>
+   <td>
+    <ul>
+     <li>Rollbar team is created</li>
+     <li>Group members are added as members of the Rollbar team</li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <em>Assign a user to Rollbar app</em>
+   </td>
+   <td>
+    <em><strong>Not recommended</strong><em>
+     <ul><li>Rollbar user is added to account, but not to any teams.</li></ul>
+   </td>
+  </tr>
+    <tr>
+     <td>
+      Remove a group from rollbar app
+     </td>
+     <td>
+      <ul><li>Rollbar team is deleted</li></ul>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Remove a user from a group assigned to Rollbar app
+     </td>
+     <td>
+      <ul><li>User is removed from the Rollbar team.</li></ul>
+     </td>
+     </tr>
+ </tbody>
+</table>
 
-If you remove a user from a group in your IdP, they will be removed from the corresponding Rollbar team in your your account.
+Additionally, any action on a user or group that would cause it to lose access to the Rollbar app (i.e. delete, suspend, deactivate, etc.) will result in the corresponding Rollbar teams/user being removed from the Rollbar account.
 
 Currently, provisioning is only available for Okta.  If you would like to use provisioning with a different identity provider, please [contact us](mailto:support@rollbar.com) and let us know which system you are using.
 {: .info}
