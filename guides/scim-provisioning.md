@@ -32,7 +32,7 @@ NOTE: We recommend you only assign **groups** to the Rollbar application.  Users
 
 * Make sure that the Rollbar application is added to your your Okta account.
 * Click on Rollbar in your application list, then go to the **Provisioning** tab.
-* Select **API Integration**, then choose to edit and make sure that `Enable API Integration` is turned on.  Enter the following for the remaining fields:
+* Select **API Integration**, then choose to edit and make sure that **Enable API Integration** is turned on.  Enter the following for the remaining fields:
   * **Base URL**: `https://rollbar.com/ACCOUNT_NAME/scim/v2/okta/`, where `ACCOUNT_NAME` is the name of the Rollbar account you are configuring.
   * **API Token**: The access token you copied from your Rollbar account.
 * Click **Test API Credentials** to confirm the configuration and then save it.
